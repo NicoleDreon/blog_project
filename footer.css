@@ -1,0 +1,10 @@
+footer {
+  grid-area: ft;
+  background-color: darkgoldenrod;
+  /* align-self: center; */
+  /* float: right; */
+  /* align-items: right; */
+}
+a {
+  align-items: center;
+}

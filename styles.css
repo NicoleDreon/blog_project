@@ -1,0 +1,117 @@
+@import url("header.css");
+@import url("footer.css");
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30px 1fr 0.5fr 30px;
+  grid-template-areas:
+    "hd"
+    "main"
+    "sd"
+    "ft";
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  text-align: center;
+  margin-top: 10px;
+}
+h4 body {
+  text-align: right;
+}
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+}
+aside {
+  text-align: right;
+  align-self: start;
+  grid-area: sd;
+  background-color: coral;
+  border-radius: 20px;
+  margin: 15px;
+  box-shadow: 5px 5px 3px rgb(175, 175, 175);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+.box {
+  width: 100%;
+  height: 1fr;
+  /* border: 2px solid bisque; */
+  margin: 4px;
+}
+.blog {
+  width: 1fr;
+  height: 210px;
+  border: 1px solid rgb(83, 83, 83);
+  margin: 10px;
+
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: 5px 5px 3px rgb(175, 175, 175);
+  border-radius: 15px;
+  background-color: rgba(95, 158, 160, 0.788);
+  /* background-color: rgba(173, 216, 230, 0.685); */
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.blog img {
+  height: 100%;
+  box-sizing: border-box;
+  /* padding: 12px; */
+  padding-right: 12px;
+  float: left;
+  /* border-radius: 40px; */
+}
+.blog p {
+  width: 100%;
+  line-height: 1.2em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  /* padding: 5px;
+  overflow: hidden;
+  width: 1fr;
+  height: 100px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; */
+}
+button {
+  float: right;
+  margin-right: 20px;
+}
+@media (min-width: 736px) {
+  body {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "main main main main main sd sd sd"
+      "ft ft ft ft ft ft ft ft";
+  }
+  aside {
+    margin-top: 20px;
+  }
+}

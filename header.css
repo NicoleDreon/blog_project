@@ -1,0 +1,8 @@
+header {
+  grid-area: hd;
+  background-color: rgba(184, 135, 11, 0.705);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 8px;
+}
