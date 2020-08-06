@@ -12,17 +12,25 @@ main {
   text-align: justify;
 }
 quote {
-  /* quotes: ; */
   align-content: center;
   margin: 30px;
   font-size: 155%;
 }
-img {
-  float: left;
+.image1 {
+  width: 100%;
+  float: right;
+  margin-top: 10px;
+}
+.image2 {
+  /* align-content: center; */
   box-sizing: border-box;
   width: 40%;
   padding: 8px;
-  margin-top: 10px;
+  padding-bottom: 0px;
+}
+figcaption {
+  font-size: 75%;
+  float: left;
 }
 aside {
   text-align: right;
